@@ -4,7 +4,7 @@
 
 A decentralized emergency alert and support system built on Algorand using AlgoKit SDK, enabling women to send tamper-proof SOS alerts and empowering NGOs & volunteers with blockchain-backed transparency.
 
-📖 Overview
+<h2>📖 Overview</h2>
 
 This open-source project aims to:
 
@@ -16,8 +16,8 @@ Enable NGOs, volunteers, and authorities to view & respond to alerts.
 
 Reward responders with Algorand-based token incentives.
 
-🔹 Features
-👩‍🦰 Women Users (Mobile App – React Native)
+<h3>🔹 Features</h3>
+<h5><br>👩‍🦰 Women Users (Mobile App – React Native)</h5>
 
 One-tap / double-tap SOS button or shake gesture.
 
@@ -27,7 +27,7 @@ Blockchain confirmation: “Alert stored on Algorand.”
 
 Notifies guardians, NGOs, and volunteers in real-time.
 
-👐 Volunteers / NGOs (Web Dashboard – React.js)
+<h5>👐 Volunteers / NGOs (Web Dashboard – React.js)</h5>
 
 View real-time map of active SOS alerts.
 
@@ -35,7 +35,7 @@ Accept/respond to cases (recorded on-chain).
 
 Earn token incentives for verified responses.
 
-🛡️ Authorities / Admins
+<h5>🛡️ Authorities / Admins</h5>
 
 Access all alerts in system.
 
@@ -45,9 +45,9 @@ Download blockchain-verified reports.
 
 View analytics (hotspots, repeat incidents).
 
-⚙️ Tech Stack
+<h4>⚙️ Tech Stack</h4>
 
-Frontend:
+<h5>Frontend:</h5>
 
 📱 React Native (mobile app)
 
@@ -55,7 +55,7 @@ Frontend:
 
 UI: TailwindCSS, React Native Paper
 
-Backend:
+<h5>Backend:</h5>
 
 Node.js / FastAPI (APIs & logic)
 
@@ -63,13 +63,13 @@ Firebase (push notifications)
 
 Google Maps / Mapbox API (location services)
 
-Blockchain:
+<h5>Blockchain:</h5>
 
 Algorand + AlgoKit SDK
 
 Smart Contracts (for SOS logging + token incentives)
 
-🚀 System Workflow
+<h5>🚀 System Workflow</h5>
 
 User triggers SOS via app (button / double tap / shake).
 
@@ -83,7 +83,7 @@ Volunteers/NGOs respond → action stored on-chain.
 
 Rewards distributed via Algorand tokens.
 
-✅ Functional Requirements
+<h4>✅ Functional Requirements</h4>
 
 User registration/login (with wallet integration).
 
@@ -103,7 +103,7 @@ Multilingual support (English/Hindi).
 
 Offline-first (cache & sync).
 
-🔒 Non-Functional Requirements
+<h4>🔒 Non-Functional Requirements</h4>
 
 Performance: <2 sec alert send time.
 
@@ -115,8 +115,8 @@ Scalability: 100k+ active users.
 
 Usability: Large, simple SOS UI.
 
-🛠️ Installation & Setup
-Prerequisites
+<h4>🛠️ Installation & Setup</h4>
+<h5><br>Prerequisites</h5>
 
 Node.js (v18+)
 
@@ -126,7 +126,7 @@ AlgoKit (pipx install algokit)
 
 Firebase / Maps API keys
 
-Steps
+<h5>Steps</h5>
 # Clone repo
 git clone https://github.com/your-username/women-safety-dapp.git
 cd women-safety-dapp
@@ -143,7 +143,7 @@ cd dashboard && npm install && npm start
 # Start backend
 cd backend && pip install -r requirements.txt && uvicorn main:app --reload
 
-📊 Future Enhancements
+<h4>📊 Future Enhancements</h4>
 
 AI-based threat hotspot prediction.
 
@@ -153,7 +153,7 @@ Voice-based SOS triggers.
 
 DAO-based community governance.
 
-🤝 Contributing
+<h4>🤝 Contributing</h4>
 
 We welcome contributions from developers, NGOs, and blockchain enthusiasts!
 
@@ -163,6 +163,6 @@ Create a feature branch 🌱
 
 Submit a PR 🔥
 
-📜 License
+<h4>📜 License</h4>
 
 This project is released under the MIT License.
