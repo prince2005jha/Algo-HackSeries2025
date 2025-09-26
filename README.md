@@ -1,81 +1,41 @@
 # Algo-HackSeries2025
-Project Title: Women Safety & Empowerment Platform (Blockchain-based SOS System)
-Technology: React Native (mobile), React.js (dashboard), Algorand (via AlgoKit SDK), Node.js/Python backend
 
-1. Introduction
-1.1 Purpose
+🚨 Women Safety & Empowerment Platform
 
-The purpose of this project is to develop a decentralized emergency alert and support platform that empowers women by enabling them to send tamper-proof SOS alerts in real-time. The platform leverages Algorand blockchain to ensure immutability, trust, and transparency in reporting, while incentivizing NGOs and volunteers via token-based rewards.
+A decentralized emergency alert and support system built on Algorand using AlgoKit SDK, enabling women to send tamper-proof SOS alerts and empowering NGOs & volunteers with blockchain-backed transparency.
 
-1.2 Scope
+📖 Overview
 
-The system will:
+This open-source project aims to:
 
-Allow women to send instant SOS alerts with location and optional voice/video evidence.
+Provide women with a fast and reliable SOS mechanism (via mobile app).
 
-Store all alerts on the Algorand blockchain for immutability.
+Store emergency reports immutably on Algorand blockchain.
 
-Provide real-time dashboards for NGOs, volunteers, and authorities to monitor and respond.
+Enable NGOs, volunteers, and authorities to view & respond to alerts.
 
-Reward responders with Algorand-based tokens.
+Reward responders with Algorand-based token incentives.
 
-Support multilingual UI and offline-first functionality.
+🔹 Features
+👩‍🦰 Women Users (Mobile App – React Native)
 
-The solution will be open-source, scalable, and community-driven.
+One-tap / double-tap SOS button or shake gesture.
 
-2. Overall Description
-2.1 Product Perspective
+Captures location, timestamp, optional voice/video.
 
-The platform consists of:
+Blockchain confirmation: “Alert stored on Algorand.”
 
-Mobile App (React Native): Used by women to send SOS alerts.
+Notifies guardians, NGOs, and volunteers in real-time.
 
-Web Dashboard (React.js): Used by NGOs/authorities to monitor alerts and respond.
-
-Backend API (Node.js/Python): Manages user authentication, Algorand smart contract calls, notifications.
-
-Blockchain Layer (Algokit SDK + Algorand): Stores immutable emergency alerts & manages incentives.
-
-2.2 User Classes & Characteristics
-
-Women Users: Primary users, need simple, fast, and reliable UI.
-
-NGOs/Volunteers: Responders, need verified data, maps, and communication tools.
-
-Authorities/Admins: Require access to all reports, escalation options, analytics.
-
-2.3 Operating Environment
-
-Mobile App: Android (min SDK 24), iOS (min iOS 12).
-
-Web Dashboard: Chrome, Firefox, Edge, Safari.
-
-Backend: Deployed on cloud (AWS/GCP/Render).
-
-Blockchain: Algorand Mainnet/Testnet via AlgoKit SDK.
-
-3. System Features
-3.1 SOS Alert (Mobile App)
-
-Trigger Mechanisms: Tap button, double-tap screen, or shake gesture.
-
-Data Captured: Location, timestamp, optional voice/video.
-
-Blockchain Storage: Alert stored immutably via Algorand smart contract.
-
-Notifications: Alert sent to guardians, NGOs, and local volunteers.
-
-3.2 Volunteer/NGO Dashboard
+👐 Volunteers / NGOs (Web Dashboard – React.js)
 
 View real-time map of active SOS alerts.
 
 Accept/respond to cases (recorded on-chain).
 
-Access user verification & communication tools.
-
 Earn token incentives for verified responses.
 
-3.3 Authority/Admin Dashboard
+🛡️ Authorities / Admins
 
 Access all alerts in system.
 
@@ -85,64 +45,124 @@ Download blockchain-verified reports.
 
 View analytics (hotspots, repeat incidents).
 
-3.4 Token Incentives
+⚙️ Tech Stack
 
-Volunteers earn reward tokens for responding.
+Frontend:
 
-Token transactions logged via Algorand smart contracts.
+📱 React Native (mobile app)
 
-4. Functional Requirements
+🌐 React.js (dashboard)
 
-User Registration & Login (via email/phone + blockchain wallet integration).
+UI: TailwindCSS, React Native Paper
 
-Send SOS with one tap/gesture.
+Backend:
 
-Store SOS alert immutably on Algorand blockchain.
+Node.js / FastAPI (APIs & logic)
 
-Real-time notifications to guardians/NGOs.
+Firebase (push notifications)
+
+Google Maps / Mapbox API (location services)
+
+Blockchain:
+
+Algorand + AlgoKit SDK
+
+Smart Contracts (for SOS logging + token incentives)
+
+🚀 System Workflow
+
+User triggers SOS via app (button / double tap / shake).
+
+App captures location + data → sends to backend.
+
+Backend pushes alert → stores on Algorand blockchain.
+
+Guardians, NGOs, and volunteers get real-time notification.
+
+Volunteers/NGOs respond → action stored on-chain.
+
+Rewards distributed via Algorand tokens.
+
+✅ Functional Requirements
+
+User registration/login (with wallet integration).
+
+Send SOS alert within <2 sec.
+
+Immutable storage on Algorand.
+
+Real-time notifications.
 
 Map visualization of alerts.
 
-Respond to SOS (volunteers/NGOs).
+Volunteer/NGO response system.
 
-Reward distribution through Algorand tokens.
+Token reward mechanism.
 
-Multilingual support (English, Hindi initially).
+Multilingual support (English/Hindi).
 
-Offline-first support (cache & sync when online).
+Offline-first (cache & sync).
 
-5. Non-Functional Requirements
+🔒 Non-Functional Requirements
 
-Performance: SOS alert should be sent in <2 seconds.
+Performance: <2 sec alert send time.
 
-Reliability: 99.9% uptime for backend.
+Reliability: 99.9% uptime.
 
-Scalability: Support 100k+ active users.
+Security: Encrypted communication.
 
-Security: End-to-end encryption for communication.
+Scalability: 100k+ active users.
 
-Blockchain Immutability: All records are tamper-proof.
+Usability: Large, simple SOS UI.
 
-Usability: Simple UI with large SOS button.
+🛠️ Installation & Setup
+Prerequisites
 
-6. External Interfaces
+Node.js (v18+)
 
-Mobile Interface: React Native app for end-users.
+Python (3.8+)
 
-Web Interface: React.js dashboard for NGOs/authorities.
+AlgoKit (pipx install algokit)
 
-APIs: REST/GraphQL APIs for backend communication.
+Firebase / Maps API keys
 
-Blockchain Interface: AlgoKit SDK → Algorand smart contracts.
+Steps
+# Clone repo
+git clone https://github.com/your-username/women-safety-dapp.git
+cd women-safety-dapp
 
-Third-Party: Maps API (Google Maps/Mapbox), Firebase (push notifications).
+# Install dependencies
+npm install   # or yarn install
 
-7. Future Enhancements
+# Start mobile app (Expo)
+npm start
 
-AI-based threat prediction using hotspot analytics.
+# Start web dashboard
+cd dashboard && npm install && npm start
 
-Integration with IoT wearables (smart bands, panic buttons).
+# Start backend
+cd backend && pip install -r requirements.txt && uvicorn main:app --reload
 
-Automatic voice-based SOS trigger using speech detection.
+📊 Future Enhancements
 
-DAO-based community governance model for safety networks.
+AI-based threat hotspot prediction.
+
+Integration with IoT wearables.
+
+Voice-based SOS triggers.
+
+DAO-based community governance.
+
+🤝 Contributing
+
+We welcome contributions from developers, NGOs, and blockchain enthusiasts!
+
+Fork the repo 🍴
+
+Create a feature branch 🌱
+
+Submit a PR 🔥
+
+📜 License
+
+This project is released under the MIT License.
